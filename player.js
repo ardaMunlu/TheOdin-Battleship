@@ -1,6 +1,6 @@
-const { Gameboard } = require('./gameboard');
+import { Gameboard } from './gameboard.js';
 
-function Player(isComputer = false) {
+export function Player(isComputer = false) {
   const board = Gameboard();
   const previousMoves = new Set();
 
@@ -24,8 +24,6 @@ function Player(isComputer = false) {
     board,
     isComputer,
     attack,
-    randomAttack
+    randomAttack,
   };
 }
-
-module.exports = { Player };

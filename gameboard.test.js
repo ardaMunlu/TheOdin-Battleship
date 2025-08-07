@@ -1,7 +1,7 @@
 const { Gameboard } = require('./gameboard');
 const { Ship } = require('./ship');
 
-test('places ship at coordinates', () => {
+it('places ship at coordinates', () => {
   const board = Gameboard();
   const ship = Ship(3);
   board.placeShip(ship, [0, 0], 'horizontal');

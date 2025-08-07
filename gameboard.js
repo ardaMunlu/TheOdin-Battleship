@@ -1,6 +1,5 @@
-const { Ship } = require('./ship');
-
-function Gameboard() {
+// Gameboard artık kendi içinde export ediliyor.
+export function Gameboard() {
   const grid = Array.from({ length: 10 }, () => Array(10).fill(null));
   const ships = [];
   const missedShots = [];
@@ -34,8 +33,6 @@ function Gameboard() {
     missedShots,
     placeShip,
     receiveAttack,
-    areAllShipsSunk
+    areAllShipsSunk,
   };
 }
-
-module.exports = { Gameboard };
