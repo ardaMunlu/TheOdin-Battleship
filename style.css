@@ -26,3 +26,6 @@
     background-color: lightblue;
   }
 
+#buttons {
+  outline: 3px solid hotpink;
+} //trying to add reset button and functionality, trying to fix add ships last element (message appears first, then requires click to show the last ship placement, etc.)
